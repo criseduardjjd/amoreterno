@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Para Ti - Con Todo Mi Amor</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        .dedication-page {
+            background: linear-gradient(135deg, #fff5f7 0%, #fff 100%);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 2rem 1rem;
+        }
+
+        .envelope {
+            background: white;
+            max-width: 800px;
+            width: 90%;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(255, 77, 141, 0.2);
+            padding: 2.5rem;
+            margin: 2rem 0;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .envelope:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 10px;
+            background: linear-gradient(90deg, #ff4d8d, #ff8fab, #ffccd5);
+        }
+
+        .letter {
+            position: relative;
+            z-index: 1;
+            padding: 2rem;
+            background: white;
+            border-radius: 10px;
+            border: 1px solid #ffebee;
+        }
+
+        .letter h1 {
+            font-family: 'Dancing Script', cursive;
+            color: #ff4d8d;
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 2rem;
+            position: relative;
+            display: inline-block;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .letter h1:after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 0;
+            width: 100%;
+            height: 3px;
+            background: linear-gradient(90deg, #ff4d8d, #ff8fab);
+            border-radius: 3px;
+        }
+
+        .letter-content {
+            font-family: 'Poppins', sans-serif;
+            line-height: 1.8;
+            color: #555;
+            font-size: 1.1rem;
+            text-align: justify;
+        }
+
+        .letter-content p {
+            margin-bottom: 1.5rem;
+            position: relative;
+            padding-left: 2rem;
+        }
+
+        .letter-content p:before {
+            content: '❤';
+            position: absolute;
+            left: 0;
+            color: #ff4d8d;
+        }
+
+        .signature {
+            margin-top: 3rem;
+            text-align: right;
+            font-family: 'Dancing Script', cursive;
+            font-size: 2rem;
+            color: #ff4d8d;
+        }
+
+        .hearts {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            pointer-events: none;
+            z-index: 0;
+            overflow: hidden;
+        }
+
+        .heart {
+            position: absolute;
+            color: rgba(255, 77, 141, 0.6);
+            font-size: 1.5rem;
+            animation: float 6s ease-in-out infinite;
+            opacity: 0;
+        }
+
+        @keyframes float {
+            0% {
+                transform: translateY(0) rotate(0deg);
+                opacity: 0;
+            }
+            10% {
+                opacity: 1;
+            }
+            90% {
+                opacity: 1;
+            }
+            100% {
+                transform: translateY(-100vh) rotate(360deg);
+                opacity: 0;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .letter h1 {
+                font-size: 2rem;
+            }
+            
+            .letter-content {
+                font-size: 1rem;
+            }
+            
+            .envelope {
+                padding: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Bouquet Mágico</div>
+            <button class="menu-toggle" aria-label="Toggle menu">
+                <span class="menu-icon">☰</span>
+            </button>
+            <ul id="nav-menu">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="galeria.html">Galería</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="dedication-page">
+        <div class="hearts" id="hearts"></div>
+        <div class="envelope">
+            <div class="letter">
+                <h1>Para la mujer que aún amo con todo mi corazón</h1>
+                <div class="letter-content">
+                    <p>Mi amor,</p>
+                    <p>Hoy me atrevo a escribirte estas palabras con la esperanza de que puedas leerlas con el corazón abierto. Los días sin ti han sido los más largos de mi vida, los momentos mas tristes  y en cada momento me doy cuenta de lo mucho que te extraño y lo importante que eres para mí y lo mucho que te necesito.</p>
+                    <p>He tenido tiempo de reflexionar sobre nuestros errores y sobre todo lo hermoso que construimos juntos. Cada recuerdo que atesoro tiene tu sonrisa, cada momento feliz de mi vida está marcado contigo a mi lado.</p>
+                    <p>Reconozco mis errores y quiero trabajar cada día para ser mejor persona, para merecer tu amor y tu confianza de nuevo. No hay distancia ni tiempo que pueda borrar lo que siento por ti.</p>
+                    <p>Esta galería que has visto es solo un pequeño reflejo de todo lo que hemos vivido, pero quiero que sepas que mi mayor deseo es seguir creando recuerdos a tu lado. Quiero ser tu apoyo, tu compañero y la persona que te haga sonreír todos los días.</p>
+                    <p>No pido que me respondas ahora mismo, ademas no estare alfrente tuyo cuando leas esto debido a todo lo pasado, solo quiero que sepas que mi corazón sigue siendo tuyo y que estoy dispuesto a luchar por lo nuestro, a reconstruir con paciencia y amor lo que alguna vez nos hizo tan felices.</p>
+                    <p>Eres el amor de mi vida, y creo con todo mi corazón que nuestra historia no ha terminado, aun tenemos muchas cosas que hacer juntos.</p>
+                    <div class="signature">
+                        <p>Con todo mi amor y esperanza,</p>
+                        <p>El hombre que nunca dejó de amarte, Cristian</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script>
+        // Efecto de corazones flotantes
+        document.addEventListener('DOMContentLoaded', function() {
+            const heartsContainer = document.getElementById('hearts');
+            
+            function createHeart() {
+                const heart = document.createElement('div');
+                heart.className = 'heart';
+                heart.innerHTML = '❤';
+                heart.style.left = Math.random() * 100 + 'vw';
+                heart.style.animationDuration = (Math.random() * 3 + 3) + 's';
+                heart.style.fontSize = (Math.random() * 20 + 10) + 'px';
+                heart.style.animationDelay = Math.random() * 2 + 's';
+                
+                heartsContainer.appendChild(heart);
+                
+                setTimeout(() => {
+                    heart.remove();
+                }, 6000);
+            }
+            
+            setInterval(createHeart, 300);
+            
+            // Crear corazones iniciales
+            for (let i = 0; i < 10; i++) {
+                setTimeout(createHeart, i * 300);
+            }
+        });
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>
